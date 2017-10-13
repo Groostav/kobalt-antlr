@@ -64,7 +64,7 @@ class AntlrPlugin @Inject constructor(override val configActor: ConfigActor<Antl
 
     // IClasspathContributor
 
-    val simpleTemplate = object: FileJarTemplate("templates/antlr.jar") {
+    val simpleTemplate = object: FileJarTemplate("./templates/antlr.jar") {
         override val pluginName = AntlrPlugin.PLUGIN_NAME
         override val templateDescription = "Simple ANTLR project"
         override val templateName = "antlr"
